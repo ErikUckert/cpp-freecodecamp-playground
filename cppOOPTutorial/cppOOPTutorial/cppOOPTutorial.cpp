@@ -8,22 +8,36 @@
 
 // creating a class
 class Employee {
-	public: // access moidifier --> private / protected / public
-		std::string Name;
-		std::string Company;
-		int Age;
+private:
+	
+	std::string Name;
+	std::string Company;
+	int Age;
 
-		void IntroduceYourself() {
-			std::cout << "My Name is " << Name << std::endl;
-			std::cout << "I work for " << Company << std::endl;
-			std::cout << "I'm age " << Age << std::endl;
-		}
+public: // access moidifier --> private / protected / public
 
-		Employee(std::string name, std::string company, int age) {
-			Name = name;
-			Company = company;
-			Age = age;
-		}
+	// some function for accessing class variables
+	void setName(std::string name) {
+		Name = name;
+	}
+
+	std::string getName() {
+		return Name;
+	}
+
+	// a little function (behavior)
+	void IntroduceYourself() {
+		std::cout << "My Name is " << Name << std::endl;
+		std::cout << "I work for " << Company << std::endl;
+		std::cout << "I'm age " << Age << std::endl;
+	}
+
+	// creating a custom constructor
+	Employee(std::string name, std::string company, int age) {
+		Name = name;
+		Company = company;
+		Age = age;
+	}
 };
 
 int main()
@@ -33,12 +47,12 @@ int main()
 	
 	// Object 1 "Erik"
     std::cout << "Hello World!\n";
-	Employee employee1("Erik", "AVL", 31);
+	Employee employee1("Erik", "AVL", 31); // short term for calling the class constructor
 	employee1.IntroduceYourself();
 
 	// Object 2 "John"
-	Employee employee2 = Employee("John", "Amazon", 33);
-
+	std::cout << "Hello World!\n";
+	Employee employee2 = Employee("John", "Amazon", 33); 
 	employee2.IntroduceYourself();
 }
 
