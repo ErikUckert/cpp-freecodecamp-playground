@@ -15,3 +15,6 @@ As IDE, Visual Studio Code 2017 is used.
     Most of the commits refer to a new section or function in the tutorials.
 
 
+#### 1.1 Simple thoughts on encapsulation
+The Idea is basicaly to make the class properties / variables private. 
+If one will change these, it has to use the defines public (and controlled) methods (functions).

@@ -5,11 +5,16 @@
 #include <string>
 
 
+class AbstractEmployee {
+	virtual void AskForPromotion() = 0;
+};
+
 
 // creating a class
-class Employee {
+class Employee:AbstractEmployee {
 private:
 	
+	// encapsulated properties
 	std::string Name;
 	std::string Company;
 	int Age;
@@ -33,6 +38,11 @@ public: // access moidifier --> private / protected / public
 		std::cout << "My Name is " << Name << std::endl;
 		std::cout << "I work for " << Company << std::endl;
 		std::cout << "I'm age " << Age << std::endl;
+	}
+
+	void AskForPromotion() {
+		if (Age > 30)
+			std::cout << Name << "get promoted!" << std::endl;
 	}
 
 	// creating a custom constructor
