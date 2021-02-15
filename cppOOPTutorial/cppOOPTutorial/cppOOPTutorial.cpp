@@ -18,6 +18,12 @@ class Employee {
 			std::cout << "I work for " << Company << std::endl;
 			std::cout << "I'm age " << Age << std::endl;
 		}
+
+		Employee(std::string name, std::string company, int age) {
+			Name = name;
+			Company = company;
+			Age = age;
+		}
 };
 
 int main()
@@ -27,17 +33,12 @@ int main()
 	
 	// Object 1 "Erik"
     std::cout << "Hello World!\n";
-	Employee employee1;
-	employee1.Name = "Erik";
-	employee1.Company = "AVL";
-	employee1.Age = 31;
+	Employee employee1("Erik", "AVL", 31);
 	employee1.IntroduceYourself();
 
 	// Object 2 "John"
-	Employee employee2;
-	employee2.Name = "John";
-	employee2.Company = "Amazon";
-	employee2.Age = 33;
+	Employee employee2 = Employee("John", "Amazon", 33);
+
 	employee2.IntroduceYourself();
 }
 
