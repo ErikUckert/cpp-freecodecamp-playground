@@ -11,6 +11,7 @@ As IDE, Visual Studio Code 2017 is used.
 
 ## Content
 ### 1 Object Oriented Programming (OOP) in C++ Course
-A short refresher on OOP Concepts in C++ and programming languages in generall, developed by Saldina Nurak [CodeBeauty](https://www.youtube.com/c/CodeBeauty/videos).
+    A short refresher on OOP Concepts in C++ and programming languages in generall, developed by Saldina Nurak [CodeBeauty](https://www.youtube.com/c/CodeBeauty/videos).
+    Most of the commits refer to a new section or function in the tutorials.
 
 

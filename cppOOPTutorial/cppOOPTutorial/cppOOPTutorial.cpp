@@ -17,10 +17,13 @@ private:
 public: // access moidifier --> private / protected / public
 
 	// some function for accessing class variables
+
+	// setter function
 	void setName(std::string name) {
 		Name = name;
 	}
 
+	// getter function
 	std::string getName() {
 		return Name;
 	}
@@ -53,6 +56,9 @@ int main()
 	// Object 2 "John"
 	std::cout << "Hello World!\n";
 	Employee employee2 = Employee("John", "Amazon", 33); 
+	employee2.IntroduceYourself();
+
+	employee2.setName("John Doe");
 	employee2.IntroduceYourself();
 }
 
